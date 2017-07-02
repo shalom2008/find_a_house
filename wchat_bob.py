@@ -1,9 +1,9 @@
 from wxpy import *
 from wechat_sender import *
-import cx_Oracle
+
 
 bot = Bot()
-
+listen(bot)
 @bot.register(Friend, TEXT)
 def auto_reply(msg):
     if msg.text == '帮助':
